@@ -145,13 +145,13 @@ class _CustomListItemState extends State<CustomListItem> {
                       var bookmark = bookmarkModel.remove(item);
                       setState(() {
                         // Here we changing the icon.
-                        toggle = !toggle;
+                        toggle = false;
                       });
                     } else {
                       var bookmark = bookmarkModel.add(item);
                       setState(() {
                         // Here we changing the icon.
-                        toggle = !toggle;
+                        toggle = true;
                       });
                     }
                   },
